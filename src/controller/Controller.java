@@ -175,19 +175,27 @@ public class Controller {
 				}
 				System.out.println("Numero actual de elementos " + modelo.darTamano() + "\n---------");						
 				break;
-			case 8:
-				modelo = new Modelo(); 
-				modelo.loadComparendos(ruta);
-				System.out.println(modelo);
-				System.out.println("Arreglo Dinamico creado");
-				System.out.println("Numero actual de elementos " + modelo.darTamano() + "\n---------");	
-				System.out.println("Primer Elemento: " + modelo.retornoPrimero() + "\n---------");		
-				System.out.println("Ultimo Elemento: " + modelo.retornoUltimo() + "\n---------");
-				System.out.println("Tamanio Copia: " + modelo.tamanioCopia()+ "\n---------");
-				System.out.println("TODOS PRUEBA: "+ "\n---------");
-				modelo.primerosYUltimos();
 				
+			case 8:
+				
+				System.out.println("--------- \nDar localidad a buscar: ");
+				respuesta = lector.next();
+				System.out.println("--------- \nDar Fecha Hora ini a buscar: ");
+				fecha1 = lector.next();
+				System.out.println("--------- \nDar Fecha hora fin a buscar: ");
+				fecha2 = lector.next();
+				respuesta =  modelo.comparendosEntreFechas(fecha1, fecha2, respuesta)+ "";
+				if ( respuesta != null)
+				{
+					System.out.println("Comparendo: "+ respuesta);
+				}
+				else
+				{
+					System.out.println("Dato NO encontrado");
+				}
+				System.out.println("Numero actual de elementos " + modelo.darTamano() + "\n---------");						
 				break;
+				
 			case 9:
 				modelo = new Modelo(); 
 				modelo.loadComparendos(ruta);
