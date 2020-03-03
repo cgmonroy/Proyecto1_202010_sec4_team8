@@ -110,7 +110,7 @@ public class Controller {
 				
 			
 				
-			case 4;
+			case 4:
 			System.out.println("--------- \nDar fecha1 a buscar: ");
 			fecha1 = lector.next();
 			System.out.println("--------- \nDar fecha2 a buscar: ");
@@ -118,7 +118,7 @@ public class Controller {
 			respuesta =  modelo.comparendosPorFechas(fecha1, fecha2) + "";
 			if ( respuesta != null)
 			{
-				System.out.println("Dato encontrado: "+ respuesta);
+				System.out.println("fechas: "+ respuesta);
 			}
 			else
 			{
@@ -129,45 +129,51 @@ public class Controller {
 		
 				
 			case 5:
-				modelo = new Modelo(); 
-				modelo.loadComparendos(ruta);
-				System.out.println(modelo);
-				System.out.println("Arreglo Dinamico creado");
-				System.out.println("Numero actual de elementos " + modelo.darTamano() + "\n---------");	
-				System.out.println("Primer Elemento: " + modelo.retornoPrimero() + "\n---------");		
-				System.out.println("Ultimo Elemento: " + modelo.retornoUltimo() + "\n---------");
-				System.out.println("Tamanio Copia: " + modelo.tamanioCopia()+ "\n---------");
-				System.out.println("TODOS PRUEBA: "+ "\n---------");
-				modelo.primerosYUltimos();
-				
+				System.out.println("--------- \nDar infraccion a buscar: ");
+				fecha2 = lector.next();
+				respuesta =  modelo.buscarPorInfraccion(fecha2) + "";
+				if ( respuesta != null)
+				{
+					System.out.println("Comparendo: "+ respuesta);
+				}
+				else
+				{
+					System.out.println("Dato NO encontrado");
+				}
+				System.out.println("Numero actual de elementos " + modelo.darTamano() + "\n---------");						
 				break;
+			
 				
 			case 6:
-				modelo = new Modelo(); 
-				modelo.loadComparendos(ruta);
-				System.out.println(modelo);
-				System.out.println("Arreglo Dinamico creado");
-				System.out.println("Numero actual de elementos " + modelo.darTamano() + "\n---------");	
-				System.out.println("Primer Elemento: " + modelo.retornoPrimero() + "\n---------");		
-				System.out.println("Ultimo Elemento: " + modelo.retornoUltimo() + "\n---------");
-				System.out.println("Tamanio Copia: " + modelo.tamanioCopia()+ "\n---------");
-				System.out.println("TODOS PRUEBA: "+ "\n---------");
-				modelo.primerosYUltimos();
-				
+				System.out.println("--------- \nDar infraccion a buscar: ");
+				fecha2 = lector.next();
+				respuesta =  modelo.comparendosPorinfraccion(fecha2) + "";
+				if ( respuesta != null)
+				{
+					System.out.println("Comparendo: "+ respuesta);
+				}
+				else
+				{
+					System.out.println("Dato NO encontrado");
+				}
+				System.out.println("Numero actual de elementos " + modelo.darTamano() + "\n---------");						
 				break;
-				
+							
 			case 7:
-				modelo = new Modelo(); 
-				modelo.loadComparendos(ruta);
-				System.out.println(modelo);
-				System.out.println("Arreglo Dinamico creado");
-				System.out.println("Numero actual de elementos " + modelo.darTamano() + "\n---------");	
-				System.out.println("Primer Elemento: " + modelo.retornoPrimero() + "\n---------");		
-				System.out.println("Ultimo Elemento: " + modelo.retornoUltimo() + "\n---------");
-				System.out.println("Tamanio Copia: " + modelo.tamanioCopia()+ "\n---------");
-				System.out.println("TODOS PRUEBA: "+ "\n---------");
-				modelo.primerosYUltimos();
-				
+				System.out.println("--------- \nDar particular a buscar: ");
+				fecha1 = lector.next();
+				System.out.println("--------- \nDar publico a buscar: ");
+				fecha2 = lector.next();
+				respuesta =  modelo.comparendosPorTipo(fecha1, fecha2) + "";
+				if ( respuesta != null)
+				{
+					System.out.println("Comparendo: "+ respuesta);
+				}
+				else
+				{
+					System.out.println("Dato NO encontrado");
+				}
+				System.out.println("Numero actual de elementos " + modelo.darTamano() + "\n---------");						
 				break;
 			case 8:
 				modelo = new Modelo(); 
