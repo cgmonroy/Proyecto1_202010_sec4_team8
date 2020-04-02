@@ -74,7 +74,7 @@ public class Controller {
 				System.out.println("Tamanio Copia: " + modelo.tamanioCopia()+ "\n---------");
 				System.out.println("TODOS PRUEBA: "+ "\n---------");
 				modelo.primerosYUltimos();
-				
+
 				break;
 
 			case 2:
@@ -91,9 +91,9 @@ public class Controller {
 				}
 				System.out.println("Numero actual de elementos " + modelo.darTamano() + "\n---------");						
 				break;
-				
+
 			case 3:
-	
+
 				System.out.println("--------- \nDar Localidad a buscar: ");
 				localidad = lector.next();
 				respuesta =  modelo.comparendosPorFecha(fechaYhora) + "";
@@ -107,27 +107,27 @@ public class Controller {
 				}
 				System.out.println("Numero actual de elementos " + modelo.darTamano() + "\n---------");						
 				break;
-				
-			
-				
+
+
+
 			case 4:
-			System.out.println("--------- \nDar fecha1 a buscar: ");
-			fecha1 = lector.next();
-			System.out.println("--------- \nDar fecha2 a buscar: ");
-			fecha2 = lector.next();
-			respuesta =  modelo.comparendosPorFechas(fecha1, fecha2) + "";
-			if ( respuesta != null)
-			{
-				System.out.println("fechas: "+ respuesta);
-			}
-			else
-			{
-				System.out.println("Dato NO encontrado");
-			}
-			System.out.println("Numero actual de elementos " + modelo.darTamano() + "\n---------");						
-			break;
-		
-				
+				System.out.println("--------- \nDar fecha1 a buscar: ");
+				fecha1 = lector.next();
+				System.out.println("--------- \nDar fecha2 a buscar: ");
+				fecha2 = lector.next();
+				respuesta =  modelo.comparendosPorFechas(fecha1, fecha2) + "";
+				if ( respuesta != null)
+				{
+					System.out.println("fechas: "+ respuesta);
+				}
+				else
+				{
+					System.out.println("Dato NO encontrado");
+				}
+				System.out.println("Numero actual de elementos " + modelo.darTamano() + "\n---------");						
+				break;
+
+
 			case 5:
 				System.out.println("--------- \nDar infraccion a buscar: ");
 				fecha2 = lector.next();
@@ -142,8 +142,8 @@ public class Controller {
 				}
 				System.out.println("Numero actual de elementos " + modelo.darTamano() + "\n---------");						
 				break;
-			
-				
+
+
 			case 6:
 				System.out.println("--------- \nDar infraccion a buscar: ");
 				fecha2 = lector.next();
@@ -158,7 +158,7 @@ public class Controller {
 				}
 				System.out.println("Numero actual de elementos " + modelo.darTamano() + "\n---------");						
 				break;
-							
+
 			case 7:
 				System.out.println("--------- \nDar particular a buscar: ");
 				fecha1 = lector.next();
@@ -175,9 +175,9 @@ public class Controller {
 				}
 				System.out.println("Numero actual de elementos " + modelo.darTamano() + "\n---------");						
 				break;
-				
+
 			case 8:
-				
+
 				System.out.println("--------- \nDar localidad a buscar: ");
 				respuesta = lector.next();
 				System.out.println("--------- \nDar Fecha Hora ini a buscar: ");
@@ -195,7 +195,7 @@ public class Controller {
 				}
 				System.out.println("Numero actual de elementos " + modelo.darTamano() + "\n---------");						
 				break;
-				
+
 			case 9:
 				modelo = new Modelo(); 
 				modelo.loadComparendos(ruta);
@@ -207,7 +207,7 @@ public class Controller {
 				System.out.println("Tamanio Copia: " + modelo.tamanioCopia()+ "\n---------");
 				System.out.println("TODOS PRUEBA: "+ "\n---------");
 				modelo.primerosYUltimos();
-				
+
 				break;
 			case 10:
 				modelo = new Modelo(); 
@@ -220,7 +220,7 @@ public class Controller {
 				System.out.println("Tamanio Copia: " + modelo.tamanioCopia()+ "\n---------");
 				System.out.println("TODOS PRUEBA: "+ "\n---------");
 				modelo.primerosYUltimos();
-				
+
 				break;
 
 
